@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishwor Sharma - Junior Network Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li> <!-- Add this line -->
+            </ul>
+        </nav>
+        <div class="profile-pic">
+            <img src="your-photo.jpg" alt="Ishwor Sharma">
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <div class="main-photo">
+                    <img src="3.jpg" alt="Main Photo">
+                </div>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>Email: ishworsharma230@gmail.com</p>
+                    <p>I am a dedicated and motivated Junior Network Engineer with three months of professional experience. I recently completed my Bachelor of Science in Computer Science and Information Technology (BSCCSIT). I have a foundational understanding of networking and firewall management, and I am eager to further develop my skills in this field.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Associate Network Engineer</h3>
+            <p>Company Name</p>
+            <p>Date Started - Present</p>
+            <ul class="no-bullets">
+                <li>Managed and maintained network systems.</li>
+                <li>Assisted in troubleshooting and resolving network issues.</li>
+                <li>Implemented basic firewall configurations.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <h3>Bachelor of Science in Computer Science and Information Technology (BSCCSIT)</h3>
+            <p>Institution Name</p>
+            <p>Graduation Year</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: ishworsharma230@gmail.com</p>
+            <button onclick="openModal()">Contact Me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ishwor Sharma. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top">↑</button>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Me</h2>
+            <p>Email: ishworsharma230@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

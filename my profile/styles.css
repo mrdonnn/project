@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9754CB; /* Body background color */
+    color: #333;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    line-height: 1.6;
+    font-size: 1em; /* Original font size */
+}
+
+header {
+    background-color: #28104E; /* Header background color */
+    color: white;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+header .profile-pic {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    padding-top: 4em; /* Adjust for fixed header */
+}
+
+section {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+section#home {
+    color: #333;
+    padding: 6em 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-photo {
+    width: 60%; /* Larger width for main photo */
+    margin-right: 2em;
+}
+
+.main-photo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-me {
+    width: 35%; /* Smaller width for about me content */
+    text-align: left;
+}
+
+.about-me h2 {
+    color: #0056b3;
+    margin-bottom: 1em;
+}
+
+.about-me p {
+    margin: 1em 0;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+footer {
+    background-color: black; /* Black footer background */
+    color: white;
+    text-align: center;
+    padding: 0.25em 0; /* Reduced footer padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-photo, .about-me {
+        width: 100%; /* Stack columns on smaller screens */
+        margin-right: 0;
+    }
+    
+    .about-me {
+        margin-top: 2em;
+    }
+}
